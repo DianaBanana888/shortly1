@@ -65,7 +65,7 @@
             <div class="separator-mobile"></div>
 
             <button type="button" class="btn btn-small btn-secondary btn-login">Login</button>
-            <button type="button" class="btn btn-small btn-primary">Sign Up</button>
+            <button id="theRightButton" type="button" class="btn btn-small btn-primary">Sign Up</button>
           </nav>
         </div>
       </div>
@@ -86,12 +86,14 @@
 
         <form class="shorten-url-form">
           <input type="url" placeholder="Shorten a link here&hellip;" />
-          <button type="submit" class="btn btn-primary">Shorten It!</button>
+          <button type="submit" class="btn btn-primary" >Shorten It!</button>
         </form>
       </div>
 
       <div class="stats">
         <div class="content">
+        <div id="counter"></div>
+      <script src="index.js"></script>
           <h1 class="title">Advanced Statistics</h1>
           <p class="desc">
             Track how your links are performing across the web with <br />our advanced statistics
