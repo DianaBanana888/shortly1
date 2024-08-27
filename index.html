@@ -24,6 +24,10 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
+      #counter {
+            font-size: 2em;
+            margin: 20px;
+      }
     </style>
   </head>
   <body>
@@ -64,8 +68,8 @@
 
             <div class="separator-mobile"></div>
 
-            <button type="button" class="btn btn-small btn-secondary btn-login">Login</button>
-            <button id="theRightButton" type="button" class="btn btn-small btn-primary">Sign Up</button>
+            <button id="counterUp" type="button" class="btn btn-small btn-secondary btn-login">CounterUp</button>
+            <button id="counterDown" type="button" class="btn btn-small btn-primary">CounterDown</button>
           </nav>
         </div>
       </div>
@@ -84,16 +88,21 @@
           <img src="images/illustration-working.svg" alt="" role="presentation" />
         </div>
 
-        <form class="shorten-url-form">
-          <input type="url" placeholder="Shorten a link here&hellip;" />
-          <button type="submit" class="btn btn-primary" >Shorten It!</button>
-        </form>
+        <div class="shorten-url-form">
+          <input id="urlInput" type="url" placeholder="Shorten a link here and look below&hellip;" />
+          <button id="short" type="submit" class="btn btn-primary" >Go tinyurl!</button>
+          <script src="short.js"></script>
+        </div>
       </div>
 
       <div class="stats">
         <div class="content">
-        <div id="counter"></div>
-      <script src="index.js"></script>
+          <div id="listResult">
+            <p class="title">List of shortened url's</p>
+            <div id="result"></div>
+          </div>
+        <div id="counter">0</div>
+        <script src="counter.js"></script>
           <h1 class="title">Advanced Statistics</h1>
           <p class="desc">
             Track how your links are performing across the web with <br />our advanced statistics
